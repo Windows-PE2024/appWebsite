@@ -1,0 +1,106 @@
+  p {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  html, body {
+    height: 100%;
+    }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    }
+  .top {
+    background: rgba(32, 27, 27, 0.7); /* 自定义顶部颜色，可以用vscode取色，此处使用rgb，可以更换为其他颜色体系 */
+    color: #fff;
+    font-weight: 100;
+    padding: 10px 15px;
+    width: 100%;
+    }
+
+  .top .app-name {
+    font-size: 1.2em;/* 自定义顶部字体大小 */
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .main-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .app-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .download-buttle {
+    background-color: #5fa1f7;/*自定义下载按钮颜色*/
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+
+  .download-buttle:hover {
+    background-color: #0056b3;
+  }
+
+  .description {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+
+  .footer {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    .logo {
+      width: 80%;
+    }
+    .top {
+      padding: 10px 15px;
+    }
+    .top .app-name {
+      font-size: 1.2em;
+    }
+    .download-buttle {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+    .description {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+  }
